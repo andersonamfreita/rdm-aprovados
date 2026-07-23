@@ -36,12 +36,12 @@
 </div>
 <div class="tabs">
   <button class="tab active" onclick="switchTab('aprovados')">Aprovados</button>
-  <button class="tab" onclick="switchTab('rpi')">RPI Pendente<span class="rpi-badge">0</span></button>
+  <button class="tab" onclick="switchTab('rpi')">RPI Pendente<span class="rpi-badge">1</span></button>
 </div>
 <div id="aprovados" class="tab-content active">
 <div id="bar">
   <input type="text" id="search" placeholder="Filtrar..." oninput="f()">
-  <span id="info">Total: 212 | Atualizado: 23/07/2026 11:57</span>
+  <span id="info">Total: 212 | Atualizado: 23/07/2026 12:03</span>
 </div>
 <table>
 <colgroup><col class="c0"><col class="c1"><col class="c2"><col class="c3"></colgroup>
@@ -73,7 +73,7 @@
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-37878" target="_blank">RDM-37878</a></td><td>17/07/2026 12:40:26</td><td>Infraestrutura de TI           | Rafael Morato Da Silva              | Protejo Cluster Geográfico - Migração de lista de VS correspondente ao processamento (Rotinas Pós-Expediente)</td><td></td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-37812" target="_blank">RDM-37812</a></td><td>13/07/2026 16:39:55</td><td>Sistemas de Crédito PJ         | Silvia das Neves Seabra             | Correção Consignado Trabalhador</td><td></td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-37749" target="_blank">RDM-37749</a></td><td>13/07/2026 15:05:16</td><td>Sistemas de Crédito PJ         | Silvia das Neves Seabra             | Correção da Classificação de Propostas no Painel de Gestão da Esteira de Crédito</td><td></td></tr>
-<tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-37730" target="_blank">RDM-37730</a></td><td>13/07/2026 13:21:31</td><td>Infraestrutura de TI           | Thalles Ferreira Braga              | Migração de Partição - Mainframe</td><td></td></tr>
+<tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-37730" target="_blank">RDM-37730</a></td><td>13/07/2026 13:21:31</td><td>Infraestrutura de TI           | Thalles Ferreira Braga              | Migração de Partição - Mainframe</td><td class="rpi-action" title="Preencher RPI">⚠️</td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-37680" target="_blank">RDM-37680</a></td><td>14/07/2026 11:19:13</td><td>Gestão de Datacenter           | Jonas Oliveira Da Silva             | Instalação de atualizações (Patches de segurança e estabilidade) do Sistema Operacional Windows Server no domínio de Produção (Servidores SQL).</td><td></td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-37652" target="_blank">RDM-37652</a></td><td>13/07/2026 13:05:59</td><td>Sistemas de Crédito PJ         | Neliton Santos Maciel               | Ajustes Relatório de Parcelas Vincendas</td><td></td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-37611" target="_blank">RDM-37611</a></td><td>13/07/2026 14:48:25</td><td>Sistemas de Crédito PJ         | Tiago Carvalho Machado              | [PAF] Novo recebível Frete - Balcão</td><td></td></tr>
@@ -268,6 +268,7 @@
 <colgroup><col style="width:12%"><col style="width:15%"><col style="width:53%"><col style="width:20%"></colgroup>
 <thead><tr><th>Ticket</th><th>Data</th><th>Título</th><th>Status RPI</th></tr></thead>
 <tbody>
+<tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-37730" target="_blank">RDM-37730</a></td><td>13/07/2026 13:21:31</td><td>Infraestrutura de TI           | Thalles Ferreira Braga              | Migração de Partição - Mainframe</td><td>Preencher RPI</td></tr>
 
 </tbody>
 </table>
