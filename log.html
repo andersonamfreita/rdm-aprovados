@@ -15,4 +15,8 @@ Boot: 17/08/2026 10:08:45
 17/08 10:14:52 RDMs em aprovacao no Jira: 26
 17/08 10:15:29 Aprovadas (Credito PJ): 0
 17/08 10:15:30 RPIs pendentes (Credito PJ): 2
+17/08 10:19:50 --- Ciclo ---
+17/08 10:19:52 RDMs em aprovacao no Jira: 25
+17/08 10:20:28 Aprovadas (Credito PJ): 0
+17/08 10:20:29 RPIs pendentes (Credito PJ): 2
 </pre><script>function up(){var f=document.getElementById("fw").files[0];if(!f){alert("Selecione .bin");return}var s=document.getElementById("st");s.textContent="Lendo arquivo...";var r=new FileReader();r.onload=function(e){var bytes=new Uint8Array(e.target.result);var b="";for(var i=0;i<bytes.length;i++)b+=String.fromCharCode(bytes[i]);var base64=btoa(b);s.textContent="Enviando ("+Math.round(f.size/1024)+"KB)...";fetch("https://script.google.com/macros/s/AKfycbxfg70MPCy87dPC7N3-5LKVpX3KjbOG6hf_99BLXXwfRBzqr9j9Fa3DSyglZ5W8vsYQ/exec",{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify({action:"upload_firmware",content:base64}),redirect:"follow"}).then(function(r){return r.text()}).then(function(t){s.textContent="✓ Firmware enviado! ESP32 atualizará no próximo boot.";s.style.color="#66bb6a"}).catch(function(e){s.textContent="Erro: "+e.message;s.style.color="#ef5350"})};r.readAsArrayBuffer(f)}</script></body></html>
