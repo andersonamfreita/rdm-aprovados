@@ -36,12 +36,12 @@
 </div>
 <div class="tabs">
   <button class="tab active" onclick="switchTab('aprovados')">Aprovados</button>
-  <button class="tab" onclick="switchTab('rpi')">RPI Pendente<span class="rpi-badge">2</span></button>
+  <button class="tab" onclick="switchTab('rpi')">RPI Pendente<span class="rpi-badge">4</span></button>
 </div>
 <div id="aprovados" class="tab-content active">
 <div id="bar">
   <input type="text" id="search" placeholder="Filtrar..." oninput="f()">
-  <span id="info">Total: 311 | Atualizado: 25/09/2026 19:56 | <a href="log.html" style="color:#666;font-size:11px">Log</a></span>
+  <span id="info">Total: 311 | Atualizado: 26/09/2026 08:02 | <a href="log.html" style="color:#666;font-size:11px">Log</a></span>
 </div>
 <table>
 <colgroup><col class="c0"><col class="c1"><col class="c2"><col class="c3"></colgroup>
@@ -50,13 +50,13 @@
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47467" target="_blank">RDM-47467</a></td><td>25/09/2026 11:07:01</td><td>Atualização de Patches em servidores Linux</td><td></td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47414" target="_blank">RDM-47414</a></td><td>24/09/2026 12:06:13</td><td>Falha no Relatório Operações Liberadas Financiamento Adicional</td><td></td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47284" target="_blank">RDM-47284</a></td><td>23/09/2026 14:43:57</td><td>Alteração do canal de integração de relatórios do Cadastro Positivo</td><td></td></tr>
-<tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47269" target="_blank">RDM-47269</a></td><td>23/09/2026 16:19:08</td><td>Falha Crédito Rural Repasse - Sicor</td><td></td></tr>
+<tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47269" target="_blank">RDM-47269</a></td><td>23/09/2026 16:19:08</td><td>Falha Crédito Rural Repasse - Sicor</td><td class="rpi-action" title="Preencher RPI">⚠️</td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47229" target="_blank">RDM-47229</a></td><td>23/09/2026 18:24:26</td><td>Vínculo CTA | Solicitação de Vínculo de menus a escopos no CTA e</td><td></td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47131" target="_blank">RDM-47131</a></td><td>22/09/2026 16:37:10</td><td>Execução de escaneamento geral de vulnerabilidades no ativos de TI de produção e redes segregadas do Sicoob Pagamentos</td><td></td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47118" target="_blank">RDM-47118</a></td><td>22/09/2026 17:12:17</td><td>Carta Fiança - PGPC ARC-8028 - Cadastro de escopos no CTA</td><td></td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47084" target="_blank">RDM-47084</a></td><td>23/09/2026 18:04:38</td><td>[PGR] OAUTH2 - INCLUSÃO DE CAMADA DE SEGURANÇA</td><td></td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47077" target="_blank">RDM-47077</a></td><td>22/09/2026 16:27:23</td><td>FINEP | Parametrização de Programas</td><td></td></tr>
-<tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47001" target="_blank">RDM-47001</a></td><td>22/09/2026 10:52:09</td><td>[PAF] Erro no parâmetro de Liquidez</td><td></td></tr>
+<tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47001" target="_blank">RDM-47001</a></td><td>22/09/2026 10:52:09</td><td>[PAF] Erro no parâmetro de Liquidez</td><td class="rpi-action" title="Preencher RPI">⚠️</td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-46937" target="_blank">RDM-46937</a></td><td>21/09/2026 16:04:08</td><td>Falha na taxa mínima da Linha de Crédito</td><td class="rpi-action" title="Preencher RPI">⚠️</td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-46836" target="_blank">RDM-46836</a></td><td>23/09/2026 09:59:29</td><td>[PAR] Atualização de informações gravadas e enviadas pela PAR ao PLD</td><td></td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-46820" target="_blank">RDM-46820</a></td><td>21/09/2026 17:09:19</td><td>Parametrização de canais de entrada por origem de abertura de chamados</td><td></td></tr>
@@ -367,6 +367,8 @@
 <colgroup><col style="width:12%"><col style="width:30%"><col style="width:25%"><col style="width:20%"></colgroup>
 <thead><tr><th>Ticket</th><th>Responsável</th><th>Data</th><th>Status RPI</th></tr></thead>
 <tbody>
+<tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47269" target="_blank">RDM-47269</a></td><td>Silvia das Neves Seabra</td><td>23/09/2026</td><td>Preencher RPI</td></tr>
+<tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-47001" target="_blank">RDM-47001</a></td><td>Tiago Carvalho Machado</td><td>21/09/2026</td><td>Preencher RPI</td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-46937" target="_blank">RDM-46937</a></td><td>Renan Cordeiro de Oliveira Costa</td><td>21/09/2026</td><td>Preencher RPI</td></tr>
 <tr><td class="ticket"><a href="https://sisbr.atlassian.net/browse/RDM-45979" target="_blank">RDM-45979</a></td><td>Neliton Santos Maciel</td><td>11/09/2026</td><td>Preencher RPI</td></tr>
 
