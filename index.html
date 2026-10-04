@@ -6,8 +6,6 @@
 <title>RDMs Aprovadas</title>
 <style>
   body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#eef2f6;color:#1a3a5c}
-  header{background:#1a3a5c;color:#fff;padding:14px 18px}
-  header h1{margin:0;font-size:18px}
   .abas{display:flex;gap:4px;background:#1a3a5c;padding:0 18px}
   .aba{background:#24506e;color:#fff;border:none;padding:10px 16px;cursor:pointer;
        border-radius:8px 8px 0 0;font-size:14px}
@@ -28,11 +26,20 @@
   a{color:#1a66c0;text-decoration:none}
   .rpi-alerta{color:#c0392b;font-weight:bold}
   .repetido{color:#b7791f;font-size:11px;font-weight:bold;background:#fff3cd;padding:1px 6px;border-radius:8px;white-space:nowrap}
+  header{background:#1a3a5c;color:#fff;padding:14px 18px;display:flex;
+         align-items:center;justify-content:space-between;gap:12px}
+  header h1{margin:0;font-size:18px}
+  header a.ver-log{color:#fff;background:#24506e;padding:8px 14px;border-radius:8px;
+         font-size:13px;white-space:nowrap}
+  header a.ver-log:hover{background:#2f6490;text-decoration:none}
   footer{padding:12px 18px;color:#64748b;font-size:12px}
 </style>
 </head>
 <body>
-<header><h1>RDMs — Sist. de Crédito PJ</h1></header>
+<header>
+  <h1>RDMs — Sist. de Crédito PJ</h1>
+  <a class="ver-log" href="log.html">&#128203; ver log</a>
+</header>
 
 <div class="abas">
   <button class="aba ativa" data-alvo="aba-aprovados" onclick="trocarAba(this)">
@@ -2798,7 +2805,7 @@
   </table>
 </section>
 
-<footer>Gerado em 03/10/2026 18:39:21 · rdm-aprovador · <a href="log.html">ver log</a></footer>
+<footer>Gerado em 04/10/2026 07:45:20 · rdm-aprovador</footer>
 
 <script>
 function trocarAba(botao){
