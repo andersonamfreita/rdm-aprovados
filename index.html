@@ -44,10 +44,10 @@
 
 <div class="abas">
   <button class="aba ativa" data-alvo="aba-aprovados" onclick="trocarAba(this)">
-    Aprovados <span class="badge">332</span>
+    Aprovados <span class="badge">333</span>
   </button>
   <button class="aba" data-alvo="aba-rpi" onclick="trocarAba(this)">
-    RPI Pendente <span class="badge">1</span>
+    RPI Pendente <span class="badge">0</span>
   </button>
 </div>
 
@@ -61,6 +61,13 @@
       <th onclick="ordenar('tab-aprovados',3)">RPI</th>
     </tr></thead>
     <tbody>
+    
+      <tr>
+        <td><a href="https://sisbr.atlassian.net/browse/RDM-49644" target="_blank" rel="noopener">RDM-49644</a></td>
+        <td class="data">13/10/2026 17:12:43</td>
+        <td>Configurar os Endpoints da API da Plataforma de Crédito no CTA</td>
+        <td></td>
+      </tr>
     
       <tr>
         <td><a href="https://sisbr.atlassian.net/browse/RDM-49590" target="_blank" rel="noopener">RDM-49590</a></td>
@@ -255,7 +262,7 @@
         <td><a href="https://sisbr.atlassian.net/browse/RDM-48400" target="_blank" rel="noopener">RDM-48400</a> <span class="repetido" title="Aprovada novamente (repetido)">&#9888; repetido</span></td>
         <td class="data">06/10/2026 11:38:20</td>
         <td>Implantação do Pacote Evolutivo 141</td>
-        <td><span class="rpi-alerta" title="RPI pendente">&#9888;</span></td>
+        <td></td>
       </tr>
     
       <tr>
@@ -290,7 +297,7 @@
         <td><a href="https://sisbr.atlassian.net/browse/RDM-48400" target="_blank" rel="noopener">RDM-48400</a></td>
         <td class="data">02/10/2026 14:54:47</td>
         <td>Implantação do Pacote Evolutivo 141</td>
-        <td><span class="rpi-alerta" title="RPI pendente">&#9888;</span></td>
+        <td></td>
       </tr>
     
       <tr>
@@ -2401,18 +2408,11 @@
     </tr></thead>
     <tbody>
     
-      <tr>
-        <td><a href="https://sisbr.atlassian.net/browse/RDM-48400" target="_blank" rel="noopener">RDM-48400</a></td>
-        <td>Renan Cordeiro de Oliveira Costa</td>
-        <td class="data">02/10/2026 09:54:18</td>
-        <td>Preencher RPI</td>
-      </tr>
-    
     </tbody>
   </table>
 </section>
 
-<footer>Gerado em 13/10/2026 17:08:17 · rdm-aprovador</footer>
+<footer>Gerado em 13/10/2026 17:13:18 · rdm-aprovador</footer>
 
 <script>
 function trocarAba(botao){
