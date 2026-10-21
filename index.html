@@ -44,10 +44,10 @@
 
 <div class="abas">
   <button class="aba ativa" data-alvo="aba-aprovados" onclick="trocarAba(this)">
-    Aprovados <span class="badge">367</span>
+    Aprovados <span class="badge">368</span>
   </button>
   <button class="aba" data-alvo="aba-rpi" onclick="trocarAba(this)">
-    RPI Pendente <span class="badge">2</span>
+    RPI Pendente <span class="badge">1</span>
   </button>
 </div>
 
@@ -61,6 +61,13 @@
       <th onclick="ordenar('tab-aprovados',3)">RPI</th>
     </tr></thead>
     <tbody>
+    
+      <tr>
+        <td><a href="https://sisbr.atlassian.net/browse/RDM-50593" target="_blank" rel="noopener">RDM-50593</a></td>
+        <td class="data">21/10/2026 11:57:14</td>
+        <td>Evoluir Swagger para adição de escopo e mapear funcionalidades vs escopos — APIS Garantias</td>
+        <td></td>
+      </tr>
     
       <tr>
         <td><a href="https://sisbr.atlassian.net/browse/RDM-50607" target="_blank" rel="noopener">RDM-50607</a></td>
@@ -192,7 +199,7 @@
         <td><a href="https://sisbr.atlassian.net/browse/RDM-49888" target="_blank" rel="noopener">RDM-49888</a> <span class="repetido" title="Aprovada novamente (repetido)">&#9888; repetido</span></td>
         <td class="data">16/10/2026 11:34:20</td>
         <td>Upload de Documentos Assistente Inteligente de Crédito</td>
-        <td><span class="rpi-alerta" title="RPI pendente">&#9888;</span></td>
+        <td></td>
       </tr>
     
       <tr>
@@ -227,7 +234,7 @@
         <td><a href="https://sisbr.atlassian.net/browse/RDM-49888" target="_blank" rel="noopener">RDM-49888</a></td>
         <td class="data">15/10/2026 11:02:44</td>
         <td>Integração do Parecer do Assistente Inteligente de Crédito</td>
-        <td><span class="rpi-alerta" title="RPI pendente">&#9888;</span></td>
+        <td></td>
       </tr>
     
       <tr>
@@ -2647,13 +2654,6 @@
     <tbody>
     
       <tr>
-        <td><a href="https://sisbr.atlassian.net/browse/RDM-49888" target="_blank" rel="noopener">RDM-49888</a></td>
-        <td>Silvia das Neves Seabra</td>
-        <td class="data">15/10/2026 09:49:54</td>
-        <td>Preencher RPI</td>
-      </tr>
-    
-      <tr>
         <td><a href="https://sisbr.atlassian.net/browse/RDM-48680" target="_blank" rel="noopener">RDM-48680</a></td>
         <td>Giselle Lucena Silva</td>
         <td class="data">05/10/2026 16:22:51</td>
@@ -2664,7 +2664,7 @@
   </table>
 </section>
 
-<footer>Gerado em 21/10/2026 11:52:38 · rdm-aprovador</footer>
+<footer>Gerado em 21/10/2026 11:57:43 · rdm-aprovador</footer>
 
 <script>
 function trocarAba(botao){
