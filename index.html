@@ -44,7 +44,7 @@
 
 <div class="abas">
   <button class="aba ativa" data-alvo="aba-aprovados" onclick="trocarAba(this)">
-    Aprovados <span class="badge">441</span>
+    Aprovados <span class="badge">442</span>
   </button>
   <button class="aba" data-alvo="aba-rpi" onclick="trocarAba(this)">
     RPI Pendente <span class="badge">0</span>
@@ -61,6 +61,13 @@
       <th onclick="ordenar('tab-aprovados',3)">RPI</th>
     </tr></thead>
     <tbody>
+    
+      <tr>
+        <td><a href="https://sisbr.atlassian.net/browse/RDM-52977" title="Área de Infraestrutura de TI" target="_blank" rel="noopener">RDM-52977</a> <span class="repetido" title="Aprovada novamente (repetido)">&#9888; repetido</span></td>
+        <td class="data">11/11/2026 16:03:13</td>
+        <td>Expandir partição de dados nos servidores Kafka da Confluent</td>
+        <td></td>
+      </tr>
     
       <tr>
         <td><a href="https://sisbr.atlassian.net/browse/RDM-53346" title="Área de Infraestrutura de TI" target="_blank" rel="noopener">RDM-53346</a></td>
@@ -3177,7 +3184,7 @@ FINEP | Melhoria Segurança Ecossistema 3.0</td>
   </table>
 </section>
 
-<footer>Gerado em 11/11/2026 15:58:15 · rdm-aprovador</footer>
+<footer>Gerado em 11/11/2026 16:03:17 · rdm-aprovador</footer>
 
 <script>
 function trocarAba(botao){
